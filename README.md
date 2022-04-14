@@ -2,7 +2,7 @@
 * [Description](https://github.com/krisclarkdev/tok8sevents#tok8sevents)
 * [How to build](https://github.com/krisclarkdev/tok8sevents#how-to-build-the-image)
 * [Usage](https://github.com/krisclarkdev/tok8sevents#usage)
-* [License](https://github.com/krisclarkdev/LICENSE.md)
+* [License](https://github.com/krisclarkdev/tok8sevents/blob/master/LICENSE.md)
 
 # tok8sevents
 tok8sevents is an example container showing how you can send in events to Wavefront when performing various actions in helm such as

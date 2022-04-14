@@ -1,3 +1,8 @@
+# Table of Contents
+* [Description](https://github.com/krisclarkdev/tok8sevents#tok8sevents)
+* [How to build](https://github.com/krisclarkdev/tok8sevents#tok8sevents)
+* [Usage](https://github.com/krisclarkdev/tok8sevents#usage)
+
 # tok8sevents
 tok8sevents is an example container showing how you can send in events to Wavefront when performing various actions in helm such as
 
@@ -6,9 +11,24 @@ tok8sevents is an example container showing how you can send in events to Wavefr
 * Upgrade
 * Rollback
 
+![alt text](output.png)
+
+# How to build the image
+
+```shell
+git clone https://github.com/krisclarkdev/tok8sevents.git
+cd tok8sevents
+vi Dockerfile
+# Uncomment either line 1 or line 2 depending on your CPU architecture
+docker build -t krisclarkdev/tok8sevents:amd64 .
+# or
+docker build -t krisclarkdev/tok8sevents:arm64v8 .
+```
+
 # Usage
 * Copy the following file to YOURCHART/templates/wavefrontevents.yaml
 * Either change all of the CHANGEME values or use a secret
+* Change the architecture of the image to match your environment (amd64 or arm64v8)
 * Deploy your helm chat
 * View the event under browse>events in Wavefront
 
@@ -252,5 +272,4 @@ spec:
     imagePullPolicy: Always
   restartPolicy: Never
   terminationGracePeriodSeconds: 0
-
 ```

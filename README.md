@@ -1,6 +1,6 @@
 # Table of Contents
 * [Description](https://github.com/krisclarkdev/tok8sevents#tok8sevents)
-* [How to build](https://github.com/krisclarkdev/tok8sevents#tok8sevents)
+* [How to build](https://github.com/krisclarkdev/tok8sevents#how-to-build-the-image)
 * [Usage](https://github.com/krisclarkdev/tok8sevents#usage)
 
 # tok8sevents

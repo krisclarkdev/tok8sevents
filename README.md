@@ -29,7 +29,6 @@ docker build -t krisclarkdev/tok8sevents:arm64v8 .
 # Usage
 * Copy the following file to YOURCHART/templates/wavefrontevents.yaml
 * Either change all of the CHANGEME values or use a secret
-* Change the architecture of the image to match your environment (amd64 or arm64v8)
 * Deploy your helm chat
 * View the event under browse>events in Wavefront
 
@@ -45,7 +44,7 @@ spec:
   serviceAccountName: internal-kubectl
   containers:
   - name: wfeventcreator
-    image: krisclarkdev/tok8sevents:arm64v8
+    image: krisclarkdev/tok8sevents
     env:
     - name: URL
       value: "https://CHANGEME.wavefront.com"
